@@ -1,0 +1,110 @@
+*{
+  margin: 0;
+  padding: 0;
+
+}
+body{
+  background-color:brown ;
+}
+.navlist{
+  background-color:aquamarine;
+  border: 2px black solid;
+  margin: 10px;
+  padding: 10px ,20px;
+  height: 10vh;
+
+}
+.rightlist {
+  font-size: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: auto ,20px;
+}
+.rightlist ul {
+  
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  width: 50%;
+  margin: 20px;
+  padding: auto ,5px;
+}
+/* container */
+#container {
+  position: relative;
+  display: flex;
+  height: 80vh;
+  min-width: 100%;
+  align-items: flex-end;
+  justify-content: center;
+
+}
+.image{
+  display: flex;
+  justify-self: start;
+  align-self: flex-start;
+  width: 100%;
+}
+img{
+  width: 5%;
+
+  position: absolute;
+  
+  
+}
+#press{
+  position: absolute;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  height: 20vh;
+
+}
+.left-btn{
+  font-size: 20px;
+  text-align: center;
+  height: 50%;
+ padding: 30px;
+ border-radius: 20px;
+ grid-row: 2/3;
+ grid-column: 1/2;
+}
+.right-btn{
+  font-size: 20px;
+  text-align: center;
+  height: 50%;
+ padding: 30px;
+ border-radius: 20px;
+ justify-self: flex-end;
+ grid-row: 2/3;
+ grid-column:3/4;
+}
+
+.up-btn{
+  font-size: 20px;
+  text-align: center;
+  height: 50%;
+ padding: 30px;
+ border-radius: 20px;
+ grid-column: 2/3;
+}
+
+.down-btn{
+  font-size: 20px;
+  text-align: center;
+ height: 50%;
+ padding: 30px;
+ border-radius: 20px;
+ grid-row: 2/3;
+ grid-column: 2/3;
+
+
+}
+
+.bonus{
+  position: absolute;
+ 
+}
+
+
