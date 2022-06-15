@@ -10,6 +10,7 @@ let bonus=document.createElement('img');
 container.appendChild(bonus)
 bonus.src ='dolar2.gif'
 bonus.className='bonus';
+let score = document.body.appendChild(document.createElement('span'));
 
 function main (){
   let randomX=0;
@@ -65,7 +66,21 @@ function main (){
   }
 
   //rules
+
+  let counter = -1;
   function createGame(){
+
+    let maxX = randomX + (img.width / 2);
+    let minX = randomX - (img.width / 2);
+    let maxY = randomY + (img.height/ 2);
+    let minY = randomY - (img.height/ 2);
+    
+
+    if ((pixelX <= maxX && pixelX >= minX) && (pixelY <= maxY && pixelY >= minY)){
+      counter++
+      score.textContent = ` your score is: ${counter}`
+      initialPosition()
+    } 
     
   }
        function initialPosition(){
