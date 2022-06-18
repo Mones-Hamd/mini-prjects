@@ -27,7 +27,6 @@ function main (){
       if (pixelX>(window.innerWidth-100)){
          pixelX=0
        }
-      console.log(pixelX,pixelY) 
       createGame()
     } 
 
@@ -57,7 +56,22 @@ function main (){
          }
        createGame()
      }
- 
+ window.addEventListener('keydown',moveByKeys)
+function moveByKeys(e){
+  if (e.keyCode===39||e.keyCode===68){
+    toRight()
+  }
+  else if (e.keyCode===37|| e.keyCode===65){
+    toLeft()
+  }
+  else if (e.keyCode===38 || e.keyCode===87){
+    toUp()
+  }
+  else if (e.keyCode===40 || e.keyCode === 83){
+    toDown()
+  }
+
+}
 
     right.addEventListener('click',toRight);
     left.addEventListener('click',toLeft);
